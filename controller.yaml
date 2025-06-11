@@ -1,0 +1,27 @@
+base_link_controller:
+  # Publish all joint states -----------------------------------
+  joint_state_controller:
+    type: joint_state_controller/JointStateController
+    publish_rate: 50
+
+  # Position Controllers --------------------------------------
+  Revolución 11_position_controller:
+    type: effort_controllers/JointPositionController
+    joint: Revolución 11
+    pid: {p: 100.0, i: 0.01, d: 10.0}
+  Revolución 16_position_controller:
+    type: effort_controllers/JointPositionController
+    joint: Revolución 16
+    pid: {p: 100.0, i: 0.01, d: 10.0}
+  Revolución 18_position_controller:
+    type: effort_controllers/JointPositionController
+    joint: Revolución 18
+    pid: {p: 100.0, i: 0.01, d: 10.0}
+  Revolución 21_position_controller:
+    type: effort_controllers/JointPositionController
+    joint: Revolución 21
+    pid: {p: 100.0, i: 0.01, d: 10.0}
+  Revolución 23_position_controller:
+    type: effort_controllers/JointPositionController
+    joint: Revolución 23
+    pid: {p: 100.0, i: 0.01, d: 10.0}
